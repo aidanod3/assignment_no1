@@ -5,6 +5,6 @@ public class Test {
         //test
         //writing another test comment
         //ay yo whats up
-        System.out.printn(1/0);
+        System.out.println("hello again");
     }
 }
