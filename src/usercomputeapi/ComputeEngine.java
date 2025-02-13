@@ -8,5 +8,5 @@ public interface ComputeEngine {
 
     OutputDestinationResponse requestOutputDestination(OutputDestinationRequest outputDestinationRequest);
 
-    ProcessDataResponse sendData(InputSource inputSource, Delimiter delimiter, OutputDestination output);
+    ProcessDataResponse sendData(InputSource inputSource, String delimiter, OutputDestination output);
 }

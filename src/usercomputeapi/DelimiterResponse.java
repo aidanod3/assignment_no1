@@ -1,6 +1,6 @@
 package usercomputeapi;
 
 public interface DelimiterResponse {
+    String getDelimiter();
 
-    Delimiter getDelimiter();
 }
