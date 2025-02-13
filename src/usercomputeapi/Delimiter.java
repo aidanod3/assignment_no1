@@ -1,4 +1,4 @@
-package user_compute_api;
+package usercomputeapi;
 
 public class Delimiter {
 }
