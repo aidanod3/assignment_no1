@@ -12,9 +12,7 @@ public class PrototypeUserToCompute {
         OutputDestinationResponse outputDestinationResponse = computeEngine.requestOutputDestination(new OutputDestinationRequest());
 
         //send data
-        computeEngine.sendData(inputSourceResponse.getInputSource(),
-                                  delimiterResponse.getDelimiter(),
-                                  outputDestinationResponse.getOutPutDestination());
+        computeEngine.sendData(inputSourceResponse.getInputSource(), delimiterResponse.getDelimiter(), outputDestinationResponse.getOutPutDestination());
 
     }
 }
