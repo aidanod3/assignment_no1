@@ -3,6 +3,7 @@ package computestorageapi;
 import usercomputeapi.InputSourceRequest;
 import usercomputeapi.OutputDestinationRequest;
 
+@ProcessAPIPrototype
 public class PrototypeComputeStorage {
 
     public void prototype(DataStore dataStore) {
