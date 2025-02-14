@@ -1,18 +1,27 @@
 package usercomputeapi;
-public class PrototypeUserToCompute {
-    public void prototype(ComputeEngine computeEngine) {
 
-        //request input source
+import project.annotations.NetworkAPIPrototype;
+
+public class PrototypeUserToCompute {
+
+    private final ComputeEngine computeEngine;
+
+    public PrototypeUserToCompute(ComputeEngine computeEngine) {
+        this.computeEngine = computeEngine;
+    }
+
+    @NetworkAPIPrototype
+    public void sendDataPrototype() {
+        // Request input source
         InputSourceResponse inputSourceResponse = computeEngine.requestInput(new InputSourceRequest());
 
-        //request delimiter
+        // Request delimiter
         DelimiterResponse delimiterResponse = computeEngine.requestDelimiter(new DelimiterRequest());
 
-        //request output destination
+        // Request output destination
         OutputDestinationResponse outputDestinationResponse = computeEngine.requestOutputDestination(new OutputDestinationRequest());
 
-        //send data
+        // Send data
         computeEngine.sendData(inputSourceResponse.getInputSource(), delimiterResponse.getDelimiter(), outputDestinationResponse.getOutPutDestination());
-
     }
 }
